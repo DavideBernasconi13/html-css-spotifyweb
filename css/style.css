@@ -10,6 +10,19 @@
     border: 1px solid red;
 }
 
+/* -------------------------------------------------------------------------------- */
+/* ! Custom properties */
+/* -------------------------------------------------------------------------------- */
+:root {
+    --color-text: #838383;
+    --color-accent: #adff2f;
+    --color-negative: #ffffff;
+    --color-upbar: 8, 11, 18;
+    --color-aside: #000000;
+    --color-toolbar: #282828;
+    --color-main: #141922;
+}
+
 /* Container */
 .wrapper {
     height: 100vh;
@@ -21,7 +34,7 @@
     top: 0px;
     left: 200px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.258);
+    background-color: var(--color-upbar);
     z-index: 999;
 }
 
@@ -31,12 +44,12 @@
 }
 
 .main-aside {
-    background-color: blue;
+    background-color: var(--color-aside);
     width: 200px;
 }
 
 .main-content {
-    background-color: purple;
+    background-color: var(--color-main);
     width: calc(100% - 200px);
     overflow-y: auto;
     padding-top: 110px;
@@ -44,5 +57,5 @@
 
 #toolbar {
     height: 90px;
-    background-color: green;
+    background-color: var(--color-toolbar);
 }
