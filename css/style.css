@@ -4,3 +4,45 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* Utilities */
+.debug {
+    border: 1px solid red;
+}
+
+/* Container */
+.wrapper {
+    height: 100vh;
+}
+
+#upbar {
+    position: fixed;
+    height: 90px;
+    top: 0px;
+    left: 200px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.258);
+    z-index: 999;
+}
+
+.main {
+    height: calc(100vh - 90px);
+    display: flex;
+}
+
+.main-aside {
+    background-color: blue;
+    width: 200px;
+}
+
+.main-content {
+    background-color: purple;
+    width: calc(100% - 200px);
+    overflow-y: auto;
+    padding-top: 110px;
+}
+
+#toolbar {
+    height: 90px;
+    background-color: green;
+}
