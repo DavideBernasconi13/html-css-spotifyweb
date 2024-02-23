@@ -1,13 +1,59 @@
-/* Reset */
+/* -------------------------------------------------------------------------------- */
+/* ! Reset & general */
+/* -------------------------------------------------------------------------------- */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-/* Utilities */
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: var(--color-text);
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8em;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ! Utilities */
+/* -------------------------------------------------------------------------------- */
 .debug {
     border: 1px solid red;
+}
+
+section h2 {
+    color: var(--color-negative);
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Padding */
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+/* Images */
+.img-res {
+    width: 100%;
+    display: block;
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -23,7 +69,20 @@
     --color-main: #141922;
 }
 
-/* Container */
+/* -------------------------------------------------------------------------------- */
+/* ! Flex utility */
+/* -------------------------------------------------------------------------------- */
+.d-flex {
+    display: flex;
+}
+
+.j-center {
+    justify-content: center;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ! Containers */
+/* -------------------------------------------------------------------------------- */
 .wrapper {
     height: 100vh;
 }
@@ -52,10 +111,67 @@
     background-color: var(--color-main);
     width: calc(100% - 200px);
     overflow-y: auto;
-    padding-top: 110px;
+    padding: 110px 20px 20px 20px;
+}
+
+section {
+    padding-bottom: 40px;
 }
 
 #toolbar {
     height: 90px;
     background-color: var(--color-toolbar);
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ! Navigation */
+/* -------------------------------------------------------------------------------- */
+nav ul li a {
+    padding: 0px 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+    border: 1px solid transparent;
+}
+
+nav {
+    padding-bottom: 50px;
+}
+
+/* Section element commons */
+.section-title {
+    padding-bottom: 40px;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ! Container album */
+/* -------------------------------------------------------------------------------- */
+.container {
+    gap: 15px;
+}
+
+.container-item {
+    width: calc(100% / 6 - 15px);
+}
+
+.container-item-img {
+    margin-bottom: 20px;
+}
+
+.container-item-text {
+    text-align: center;
+    font-weight: 700;
+}
+
+.container-item-text h3 {
+    color: var(--color-negative);
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+/* Effetto hover su img */
+.container-item-img img:hover {
+    cursor: pointer;
+    background-color: var(--color-toolbar);
+    transition: .3s;
 }
