@@ -56,6 +56,14 @@ section h2 {
     display: block;
 }
 
+.circle {
+    border-radius: 50%;
+}
+
+.img-cicle {
+    object-fit: cover;
+}
+
 /* -------------------------------------------------------------------------------- */
 /* ! Custom properties */
 /* -------------------------------------------------------------------------------- */
@@ -155,6 +163,7 @@ nav {
 
 .container-item-img {
     margin-bottom: 20px;
+    position: relative;
 }
 
 .container-item-text {
@@ -170,8 +179,24 @@ nav {
 }
 
 /* Effetto hover su img */
-.container-item-img img:hover {
+.hover-img {
+    background-color: rgba(0, 0, 0, .8);
+    color: var(--color-negative);
+    font-size: 4em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
     cursor: pointer;
-    background-color: var(--color-toolbar);
-    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 1s;
+}
+
+.container-item-img:hover .hover-img {
+    opacity: 1;
 }
