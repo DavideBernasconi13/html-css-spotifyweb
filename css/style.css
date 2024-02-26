@@ -135,14 +135,28 @@ section {
 /* ! Navigation */
 /* -------------------------------------------------------------------------------- */
 nav ul li a {
-    padding: 0px 15px;
+    padding: 10px;
     text-transform: uppercase;
     font-weight: 800;
-    border: 1px solid transparent;
+    display: inline-block;
 }
 
 nav {
     padding-bottom: 50px;
+}
+
+nav a:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 60%;
+    margin: 0 auto;
+    background: transparent;
+}
+
+nav a.active:after,
+nav a:hover:after {
+    background-color: var(--color-accent);
 }
 
 /* Section element commons */
@@ -159,6 +173,7 @@ nav {
 
 .container-item {
     width: calc(100% / 6 - 15px);
+    cursor: pointer;
 }
 
 .container-item-img {

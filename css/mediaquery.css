@@ -2,14 +2,6 @@
 /* ! Tablet */
 /* -------------------------------------------------------------------------------- */
 @media screen and (max-width: 768px) {
-    ul {
-        flex-wrap: wrap;
-    }
-
-    ul li {
-        margin-bottom: 30px;
-    }
-
     .container {
         flex-wrap: wrap;
         gap: 8px;
@@ -38,19 +30,11 @@
 /* -------------------------------------------------------------------------------- */
 @media screen and (max-width: 567px) {
     .main-aside {
-        width: 70px;
+        width: 50px;
     }
 
     .main-content {
-        width: calc(100% - 70px);
-    }
-
-    ul {
-        flex-wrap: wrap;
-    }
-
-    ul li {
-        margin-bottom: 30px;
+        width: calc(100% - 50px);
     }
 
     .container {
