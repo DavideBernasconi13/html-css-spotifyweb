@@ -86,6 +86,10 @@ section h2 {
     align-content: center;
 }
 
+.df-column {
+    flex-direction: column;
+}
+
 /* -------------------------------------------------------------------------------- */
 /* ! Containers */
 /* -------------------------------------------------------------------------------- */
@@ -108,11 +112,67 @@ section h2 {
     display: flex;
 }
 
-.main-aside {
+/* -------------------------------------------------------------------------------- */
+/* ! Aside */
+/* -------------------------------------------------------------------------------- */
+#aside {
     background-color: var(--color-aside);
     width: 200px;
 }
 
+#aside .aside-top {
+    height: calc(100% - 80px);
+    width: 100%;
+}
+
+#aside .aside-bottom {
+    height: 80px;
+    width: 100%;
+}
+
+#logo {
+    padding: 8px;
+    width: 80%;
+    padding-bottom: 15px;
+}
+
+#logo .small-logo {
+    display: none;
+}
+
+#aside ul.nav li img {
+    opacity: 0.5;
+    height: 27px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#aside ul.nav a {
+    padding: 5px 5px 5px 10px;
+    border-left: 3px solid transparent;
+}
+
+#aside ul.nav li {
+    margin-bottom: 10px;
+}
+
+#aside ul.nav a.active {
+    border-color: var(--color-accent);
+}
+
+#aside ul.nav a:hover {
+    border-color: var(--color-accent);
+}
+
+#aside ul.nav li img:hover,
+#aside ul.nav li a:hover {
+    opacity: 1;
+    color: var(--color-negative);
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ! Main content */
+/* -------------------------------------------------------------------------------- */
 .main-content {
     background-color: var(--color-main);
     width: calc(100% - 200px);
