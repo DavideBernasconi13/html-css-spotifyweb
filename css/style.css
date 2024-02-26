@@ -118,6 +118,8 @@ section h2 {
 #aside {
     background-color: var(--color-aside);
     width: 200px;
+    font-size: 0.8em;
+    font-weight: 700;
 }
 
 #aside .aside-top {
@@ -128,6 +130,8 @@ section h2 {
 #aside .aside-bottom {
     height: 80px;
     width: 100%;
+    background-color: var(--color-aside);
+    padding: 5px 5px 5px 10px;
 }
 
 #logo {
@@ -140,8 +144,8 @@ section h2 {
     display: none;
 }
 
-#aside ul.nav li img {
-    opacity: 0.5;
+#aside ul.nav li a img {
+    opacity: 0.7;
     height: 27px;
     display: inline-block;
     vertical-align: middle;
@@ -179,15 +183,108 @@ section h2 {
     text-transform: uppercase;
     font-weight: 800;
     color: var(--color-negative);
+    margin-bottom: 10px;
 }
 
-/* #aside .playlist .square{
-        height: 40px;
-        width: 40px;
-        opacity: 0.8;
-        background-color: var(--color-negative);
-        display: inline-block;
-} */
+#aside .playlist .square {
+    height: 25px;
+    width: 25px;
+    opacity: 0.7;
+    background-color: var(--color-negative);
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    color: var(--color-aside);
+}
+
+#aside .playlist .square:hover {
+    opacity: 1;
+    transform: scale(0.8);
+    transition: .2s;
+}
+
+#aside .add-playlist {
+    position: relative;
+    font-size: 1.3em;
+}
+
+#aside .playlist span {
+    line-height: 25px;
+    height: 25px;
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+}
+
+#aside .playlist .square:after {
+    content: '\2b';
+    font-family: "Font Awesome 5 Free";
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+#aside .playlist {
+    min-height: 0px;
+}
+
+#aside .playlist ul {
+    height: calc(100% - 50px);
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+#aside .playlist ul li {
+    margin-bottom: 10px;
+}
+
+/* Aside bottom */
+.aside-bottom .install {
+    padding: 10px 0px;
+    border-bottom: 1px solid var(--color-text);
+}
+
+.aside-bottom .install .icon {
+    border-radius: 50%;
+    border: 1px solid var(--color-negative);
+    height: 10px;
+    width: 10px;
+}
+
+.user {
+    align-items: center;
+    padding-top: 10px;
+}
+
+.aside-bottom .user-pic {
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    background-color: var(--color-text);
+    display: block;
+    overflow: hidden;
+}
+
+.aside-bottom .user .user-pic img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.aside-bottom .user .user-name span {
+    color: var(--color-negative);
+    font-size: 1.5em;
+    padding-left: 10px;
+}
+
 /* -------------------------------------------------------------------------------- */
 /* ! Main content */
 /* -------------------------------------------------------------------------------- */
