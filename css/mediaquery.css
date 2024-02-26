@@ -47,8 +47,28 @@
 /* ! Mobile xs */
 /* -------------------------------------------------------------------------------- */
 @media screen and (max-width: 567px) {
+    #logo .main-logo {
+        display: none;
+    }
+
+    #logo {
+        width: 100%;
+    }
+
+    #logo .small-logo {
+        display: block;
+    }
+
     #aside {
         width: 50px;
+    }
+
+    #aside .playlist {
+        display: none;
+    }
+
+    #aside li span {
+        display: none;
     }
 
     .main-content {

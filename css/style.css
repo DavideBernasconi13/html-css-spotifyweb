@@ -254,9 +254,18 @@ section h2 {
 
 .aside-bottom .install .icon {
     border-radius: 50%;
-    border: 1px solid var(--color-negative);
-    height: 10px;
-    width: 10px;
+    border: 1px solid var(--color-text);
+    height: 15px;
+    width: 15px;
+    display: flex;
+}
+
+.aside-bottom .install .icon:before {
+    content: '\f063';
+    font-size: 0.8em;
+    font-family: "Font Awesome 5 Free";
+    justify-content: center;
+    align-items: center;
 }
 
 .user {
