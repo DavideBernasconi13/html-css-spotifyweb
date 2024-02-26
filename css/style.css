@@ -58,10 +58,7 @@ section h2 {
 
 .circle {
     border-radius: 50%;
-}
-
-.img-cicle {
-    object-fit: cover;
+    overflow: hidden;
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -86,6 +83,7 @@ section h2 {
 
 .j-center {
     justify-content: center;
+    align-content: center;
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -145,6 +143,10 @@ nav {
     padding-bottom: 50px;
 }
 
+nav ul {
+    flex-wrap: wrap;
+}
+
 nav a:after {
     content: '';
     display: block;
@@ -159,9 +161,18 @@ nav a:hover:after {
     background-color: var(--color-accent);
 }
 
+nav a:hover {
+    color: var(--color-negative);
+}
+
 /* Section element commons */
 .section-title {
     padding-bottom: 40px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 0 10px;
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -204,7 +215,6 @@ nav a:hover:after {
     right: 0;
     bottom: 0;
     z-index: 2;
-    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -212,6 +222,6 @@ nav a:hover:after {
     transition: 1s;
 }
 
-.container-item-img:hover .hover-img {
+.container-item:hover .hover-img {
     opacity: 1;
 }
