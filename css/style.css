@@ -466,7 +466,7 @@ section {
 /* -------------------------------------------------------------------------------- */
 .toolbar-right,
 .toolbar-left {
-    width: 20%;
+    width: 15%;
     padding: 20px 10px;
     background-color: var(--color-toolbar);
     justify-content: space-between;
@@ -520,8 +520,12 @@ section {
     color: var(--color-negative);
 }
 
+/* customize all type range */
 input[type=range] {
-    max-width: 100px;
+    -webkit-appearance: none;
+    background: var(--color-text);
+    height: 5px;
+    max-width: 400px;
 }
 
 .toolbar-center .controller {
