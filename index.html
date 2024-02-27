@@ -232,7 +232,7 @@
 
         </div>
         <div id="toolbar" class="d-flex">
-            <div class="toolbar-right d-flex debug">
+            <div class="toolbar-right d-flex gap-small debug">
                 <div class="album-small">
                     <img src="img/sinister.jpeg" alt="Sinister">
                 </div>
@@ -240,13 +240,33 @@
                     <span>Sinister</span>
                     <a href="#">Brano nome</a>
                 </div>
-                <div class="icon d-flex">
+                <div class="icon d-flex j-center gap-small">
                     <a href="#"><i class="fa-regular fa-heart"></i></a>
                     <a href="#"><i class="fa-regular fa-folder"></i></a>
                 </div>
             </div>
-            <div class="toolbar-center debug">Center</div>
-            <div class="toolbar-left debug">Left</div>
+            <div class="toolbar-center d-flex">
+                <div class="controller d-flex gap-medium">
+                    <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+                    <a href="#"><i class="fa-solid fa-backward-step"></i></a>
+                    <a href="#"><i class="fa-regular fa-circle-play"></i></a>
+                    <a href="#"><i class="fa-solid fa-forward-step"></i></a>
+                    <a href="#"><i class="fa-solid fa-rotate-right"></i></a>
+                </div>
+                <div class="progress d-flex gap-small">
+                    <small>0:25</small>
+                    <input type="range">
+                    <small>4:35</small>
+                </div>
+            </div>
+            <div class="toolbar-left d-flex debug">
+                <div class="controller d-flex gap-small">
+                    <a href="#"><i class="fa-solid fa-list"></i></a>
+                    <a href="#"><i class="fa-solid fa-display"></i></a>
+                    <a href="#"><i class="fa-solid fa-volume-high"></i></a>
+                </div>
+                <input type="range">
+            </div>
 
         </div>
     </div>

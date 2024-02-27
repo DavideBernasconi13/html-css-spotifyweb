@@ -90,6 +90,14 @@ section h2 {
     flex-direction: column;
 }
 
+.gap-small {
+    gap: 10px;
+}
+
+.gap-medium {
+    gap: 25px;
+}
+
 /* -------------------------------------------------------------------------------- */
 /* ! Containers */
 /* -------------------------------------------------------------------------------- */
@@ -232,6 +240,7 @@ section h2 {
 #aside .add-playlist {
     position: relative;
     font-size: 1.3em;
+    z-index: 1;
 }
 
 #aside .playlist span {
@@ -276,6 +285,7 @@ section h2 {
 .aside-bottom .install {
     padding: 10px 0px;
     border-bottom: 1px solid var(--color-text);
+    align-items: center;
 }
 
 .aside-bottom .install .icon {
@@ -456,24 +466,39 @@ section {
 /* -------------------------------------------------------------------------------- */
 .toolbar-right,
 .toolbar-left {
-    width: 20%;
+    width: 13.5%;
     padding: 20px 10px;
     background-color: var(--color-toolbar);
+    justify-content: space-between;
+    align-items: center;
 }
 
 .toolbar-center {
     flex-grow: 1;
     background-color: var(--color-toolbar);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .toolbar-right .album-small img {
-    height: 50px;
-    margin-right: 20px;
+    height: 40px;
 }
 
 .toolbar-right .album-title {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+}
+
+.toolbar-right .album-title a {
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+.toolbar-right .album-title a:hover {
+    text-decoration: underline;
+    color: var(--color-negative);
 }
 
 .toolbar-right .album-title span {
@@ -484,9 +509,41 @@ section {
 
 .toolbar-right .icon {
     align-items: center;
-    margin-left: 30px;
 }
 
 .toolbar-right .icon a i {
-    padding: 10px 15px;
+    font-size: 1.2em;
+}
+
+.toolbar-right .icon a i:hover,
+.toolbar-left a i:hover {
+    color: var(--color-negative);
+}
+
+input[type=range] {
+    max-width: 100px;
+}
+
+.toolbar-center .controller {
+    height: 50px;
+}
+
+.toolbar-center .controller a i {
+    font-size: 2em;
+    color: var(--color-negative);
+    line-height: 50px;
+}
+
+.toolbar-center .controller a i:hover {
+    transform: scale(1.3);
+    transion: 0.3s;
+}
+
+.toolbar-center .progress {
+    min-width: 400px;
+    align-items: center;
+}
+
+.toolbar-center .progress input[type=range] {
+    min-width: 380px;
 }
