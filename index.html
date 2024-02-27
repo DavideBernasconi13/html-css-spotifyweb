@@ -19,7 +19,9 @@
 
 <body>
     <div class="wrapper">
-        <div id="upbar">upbar</div>
+        <div id="upbar">
+            <a href="#" class="btn">Effettua l'upgrade</a>
+        </div>
         <div class="main">
             <div id="aside" class="d-flex df-column">
                 <div class="aside-top d-flex df-column debug">
@@ -68,10 +70,9 @@
                     </div>
                 </div>
                 <div class="aside-bottom debug">
-                    <div class="install">
-                        <div class="icon"></div>
-
-                        <span>Installa app</span>
+                    <div class="install d-flex">
+                        <a href="#" class="icon"></a>
+                        <span><a href="#">Installa app</a></span>
                     </div>
                     <div class="user d-flex">
                         <div class="user-pic">
@@ -230,7 +231,22 @@
 
 
         </div>
-        <div id="toolbar">
+        <div id="toolbar" class="d-flex">
+            <div class="toolbar-right d-flex debug">
+                <div class="album-small">
+                    <img src="img/sinister.jpeg" alt="Sinister">
+                </div>
+                <div class="album-title j-center">
+                    <span>Sinister</span>
+                    <a href="#">Brano nome</a>
+                </div>
+                <div class="icon d-flex">
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#"><i class="fa-regular fa-folder"></i></a>
+                </div>
+            </div>
+            <div class="toolbar-center debug">Center</div>
+            <div class="toolbar-left debug">Left</div>
 
         </div>
     </div>

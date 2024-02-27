@@ -68,7 +68,7 @@ section h2 {
     --color-text: #838383;
     --color-accent: #adff2f;
     --color-negative: #ffffff;
-    --color-upbar: 8, 11, 18;
+    --color-upbar: #0000004f;
     --color-aside: #000000;
     --color-toolbar: #282828;
     --color-main: #141922;
@@ -113,6 +113,31 @@ section h2 {
 }
 
 /* -------------------------------------------------------------------------------- */
+/* ! Upbar */
+/* -------------------------------------------------------------------------------- */
+#upbar a.btn {
+    padding: 15px 30px;
+    border: 1px solid var(--color-negative);
+    border-radius: 20px;
+    color: var(--color-negative);
+    text-transform: uppercase;
+    margin: auto 0;
+    position: absolute;
+    right: 218px;
+    top: 25%;
+    transform: translateY(-25%, 0);
+}
+
+#upbar a.btn:hover {
+    transform: scale(1.2);
+    background-color: var(--color-aside);
+    color: var(--color-accent);
+    top: 25%;
+    right: 238px;
+    transition: .3s;
+}
+
+/* -------------------------------------------------------------------------------- */
 /* ! Aside */
 /* -------------------------------------------------------------------------------- */
 #aside {
@@ -120,6 +145,7 @@ section h2 {
     width: 200px;
     font-size: 0.8em;
     font-weight: 700;
+    min-height: 480px;
 }
 
 #aside .aside-top {
@@ -255,22 +281,37 @@ section h2 {
 .aside-bottom .install .icon {
     border-radius: 50%;
     border: 1px solid var(--color-text);
-    height: 15px;
-    width: 15px;
-    display: flex;
+    height: 20px;
+    width: 20px;
+    display: inline;
 }
 
 .aside-bottom .install .icon:before {
     content: '\f063';
-    font-size: 0.8em;
+    font-size: 1em;
     font-family: "Font Awesome 5 Free";
+    display: flex;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
 }
 
+.aside-bottom .install a:hover {
+    color: var(--color-negative);
+}
+
+.aside-bottom .install .icon:before:hover .icon {
+    border: 1px solid var(--color-negative);
+}
+
+.aside-bottom .install span {
+    padding-left: 5px;
+}
+
 .user {
     align-items: center;
-    padding-top: 10px;
+    padding-top: 5px;
 }
 
 .aside-bottom .user-pic {
@@ -408,4 +449,44 @@ section {
 
 .container-item:hover .hover-img {
     opacity: 1;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ! Toolbar */
+/* -------------------------------------------------------------------------------- */
+.toolbar-right,
+.toolbar-left {
+    width: 20%;
+    padding: 20px 10px;
+    background-color: var(--color-toolbar);
+}
+
+.toolbar-center {
+    flex-grow: 1;
+    background-color: var(--color-toolbar);
+}
+
+.toolbar-right .album-small img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.toolbar-right .album-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.toolbar-right .album-title span {
+    display: block;
+    color: var(--color-negative);
+    font-weight: 800;
+}
+
+.toolbar-right .icon {
+    align-items: center;
+    margin-left: 30px;
+}
+
+.toolbar-right .icon a i {
+    padding: 10px 15px;
 }

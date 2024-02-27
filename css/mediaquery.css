@@ -67,8 +67,15 @@
         display: none;
     }
 
-    #aside li span {
+    #aside li span,
+    #aside span {
         display: none;
+    }
+
+    #aside .aside-bottom .install,
+    #aside .aside-bottom .user {
+        justify-content: center;
+        border: none;
     }
 
     .main-content {
