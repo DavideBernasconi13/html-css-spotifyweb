@@ -11,6 +11,20 @@
         justify-content: space-between;
         margin-bottom: 30px;
     }
+
+    .toolbar-right .album-title a {
+        font-size: 0.7em;
+    }
+
+    .toolbar-right .icon {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .toolbar-left {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 /* -------------------------------------------------------------------------------- */
@@ -19,6 +33,14 @@
 @media screen and (max-width: 992px) {
     .container-item {
         width: calc(100% / 3 - 15px);
+    }
+
+    .toolbar-right .album-small img {
+        height: 30px;
+    }
+
+    .toolbar-right .album-title span {
+        font-size: 0.8em;
     }
 }
 
@@ -40,6 +62,27 @@
 
     .hover-img {
         font-size: 2.5em;
+    }
+
+    .toolbar-right .icon {
+        display: none;
+    }
+
+    .toolbar-left input {
+        display: none;
+    }
+
+    .toolbar-left .controller {
+        flex-direction: column;
+    }
+
+    .toolbar-center .progress input[type=range] {
+        min-width: 300px;
+        margin: 0 auto;
+    }
+
+    .toolbar-left {
+        width: 5%;
     }
 }
 
@@ -93,5 +136,9 @@
 
     .hover-img {
         font-size: 5em;
+    }
+
+    .toolbar-right {
+        width: 25%;
     }
 }
