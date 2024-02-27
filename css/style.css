@@ -466,7 +466,7 @@ section {
 /* -------------------------------------------------------------------------------- */
 .toolbar-right,
 .toolbar-left {
-    width: 13.5%;
+    width: 20%;
     padding: 20px 10px;
     background-color: var(--color-toolbar);
     justify-content: space-between;
